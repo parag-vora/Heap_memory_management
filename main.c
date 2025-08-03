@@ -26,5 +26,9 @@ int main(){
         insertItem(s_ptr, i);
     }
     printArray(s_ptr);
+
+    freeMemory(s_ptr); // free the memory allocated to structure
+
+    return 0;
        
 }

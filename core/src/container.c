@@ -64,3 +64,9 @@ void deleteItem(sensorData *p_ptr, int p_index){
     p_ptr->index--;
     
 }
+
+void freeMemory(sensorData *p_ptr){
+
+    free(p_ptr->ptr);
+    free(p_ptr);
+}

@@ -19,6 +19,6 @@ extern void printArray(sensorData *p_ptr); // print arra for current index
 extern void getItem(sensorData *p_ptr, int p_index); // get a value form given index
 extern void changeItem(sensorData *p_ptr, int p_index, int p_newValue); // change value at given index
 extern void deleteItem(sensorData *p_ptr, int p_index); // delete item and adjust index
-
+extern void freeMemory(sensorData *p_ptr); // free memory allocated to structure
 
 #endif CONTAINER_H
