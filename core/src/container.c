@@ -69,4 +69,7 @@ void freeMemory(sensorData *p_ptr){
 
     free(p_ptr->ptr);
     free(p_ptr);
+    p_ptr->ptr = NULL;
+    p_ptr = NULL;
+    printf("\nMemory freed successfully\n");
 }
